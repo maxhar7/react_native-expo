@@ -4,19 +4,15 @@ import { Stack } from 'expo-router'
 
 const StackLayout = () => {
   return (
-    <Stack
-        screenOptions={
-            {
-                // headerShown: false, oculta el header
-                headerShadowVisible: false,
-                headerTitleAlign: 'center',
-                contentStyle: {
-                    backgroundColor: 'white'
-                },
-                animation: 'slide_from_bottom'
-            }
-        }
-    >
+    <Stack screenOptions={{
+            // headerShown: false, //oculta el header
+            headerShadowVisible: false,
+            headerTitleAlign: 'center',
+            contentStyle: {
+                backgroundColor: 'white'
+            },
+            animation: 'slide_from_bottom'
+    }}>
         <Stack.Screen 
             name='home/index'
             options={{
@@ -25,6 +21,7 @@ const StackLayout = () => {
                 // animation: 'slide_from_right'
             }}
         />
+
         <Stack.Screen 
             name='products/index'
             options={{

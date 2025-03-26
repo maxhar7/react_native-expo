@@ -11,21 +11,22 @@ const HomeScreen
 
         <CustomButton 
           className='mt-2'          
-          onPress={() => router.push('/products')}>
+          onPress={() => router.push('/tabs/(stack)/products')}>
           Productos
         </CustomButton>
         
+        {/* se puede omitir (stack) ya que es el stack por defecto */}
         <CustomButton 
           className='mt-2'
           color='secondary'
-          onPress={() => router.push('/profile')}>
+          onPress={() => router.push('/tabs/profile')}>
           Profile
         </CustomButton>
 
         <CustomButton 
           className='mt-2'
           color='tertiary'
-          onPress={() => router.push('/settings')}>
+          onPress={() => router.push('/tabs/settings')}>  
           Settings
         </CustomButton>
 

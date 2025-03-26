@@ -3,7 +3,8 @@ import React from 'react'
 import { Link, Redirect } from 'expo-router'
 
 const index = () => {
-  return <Redirect href='/(stack)/home' />
+  // return <Redirect href='/(stack)/home' />
+  return <Redirect href="/drawer/user" />;
   // return (
   //   <SafeAreaView>
   //     <View className='mt-5 mx-2.5'>
